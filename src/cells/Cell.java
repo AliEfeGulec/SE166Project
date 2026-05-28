@@ -25,4 +25,7 @@ public abstract class Cell {
         this.row = row;
     }
     public abstract char getSymbol();
+
+    public void resetForTick(){
+    }
 }
