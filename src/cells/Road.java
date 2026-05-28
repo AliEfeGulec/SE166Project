@@ -1,6 +1,6 @@
 package cells;
 
-public class Road extends Cell /* implements Connectable (henüz yazılmadı/not written yet) */{
+public class Road extends Cell implements Connectable{
 
     public static final char Symbol = 'R';
 
