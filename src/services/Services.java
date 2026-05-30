@@ -14,4 +14,10 @@ public abstract class Services extends Cell {
         return radius;
     }
     public abstract String getServiceType();
+
+    public boolean covers(int r,int c) {
+        int dr = r - getRow();
+        int dc = c - getCol();
+        return dr * dr + dc * dc <= radius * radius;
+    }
 }
