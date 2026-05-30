@@ -28,4 +28,9 @@ public abstract class Cell {
 
     public void resetForTick(){
     }
+
+    @Override
+    public String toString(){
+        return getClass().getSimpleName()+" at ("+row+","+col+")";
+    }
 }
