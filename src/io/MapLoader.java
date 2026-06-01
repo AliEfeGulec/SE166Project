@@ -26,12 +26,11 @@ public class MapLoader {
             new HashMap<>();
 
     public MapLoader() {
-        factories.put(EmptyCell.SYMBOL, (row, col) -> new EmptyCell(row, col));
-        factories.put(Road.SYMBOL, (row, col) -> new Road(row, col));
-        factories.put(Housing.SYMBOL, (row, col) -> new Housing(row, col));
-        factories.put(Industrial.SYMBOL, (row, col) -> new Industrial(row, col));
-        factories.put(Commercial.SYMBOL, (row, col) -> new Commercial(row, col));
-        factories.put(InternetHub.SYMBOL, (row, col) -> new InternetHub(row, col));
-        factories.put(PoliceStation.SYMBOL, (row, col) -> new PoliceStation(row, col));}
+        factories.put(EmptyCell.Symbol, (row, col) -> new EmptyCell(row, col));
+        factories.put(Road.Symbol, (row, col) -> new Road(row, col));
+        factories.put(Housing.Symbol, (row, col) -> new Housing(row, col));
+        factories.put(Industrial.Symbol, (row, col) -> new Industrial(row, col));
+        factories.put(Commercial.Symbol, (row, col) -> new Commercial(row, col));
+    }
     
 }
