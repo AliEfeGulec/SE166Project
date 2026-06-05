@@ -42,7 +42,7 @@ public class UtilityDistributor {
                         int give = Math.min(want, remaining);
                         zone.receiveUtility(type, give);
                         remaining -= give;
-                        log.line(zone+ "received "+give+""+type);
+                        log.line(zone+ " received "+give+" "+type);
                     }
                 }
             }

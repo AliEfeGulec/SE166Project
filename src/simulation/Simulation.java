@@ -35,9 +35,9 @@ public class Simulation {
     private void updateZones(TickLog log){
         for (Zone z : city.getZones()){
             int previous = z.update();
-            log.line(z+"generated"+z.getOutput()+ " " +z.producedResource());
+            log.line(z+" generated "+z.getOutput()+ " " +z.producedResource());
             if (z.getLevel()>previous) {
-                log.line(z+ "levels up from "+ previous+ " to " + z.getLevel());
+                log.line(z+" levels up from "+ previous+ " to " + z.getLevel());
             } else if (z.getLevel()<previous) {
                 log.line(z+" levels down from "+ previous+ " to " + z.getLevel());
             }
